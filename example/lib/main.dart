@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tab_indicator_styler/src.dart';
+import 'package:tab_indicator_styler/tab_indicator_styler.dart';
 
 void main() {
   runApp(MyApp());
