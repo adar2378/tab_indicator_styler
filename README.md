@@ -13,6 +13,12 @@ Add beautiful and trending tab indicators directly to your default Flutter TabBa
 - 3 different styles of TabIndicator
 - Highly customizable
 
+## Demo
+
+<p align="center">
+  <img src="https://github.com/adar2378/tab_indicator_styler/raw/master/images/demo.gif" width="240" height="480"> 
+</p>
+
 ## Styles
 
 #### DotIndicator
