@@ -22,6 +22,7 @@ Add beautiful and trending tab indicators directly to your default Flutter TabBa
 ## Styles
 
 #### DotIndicator
+
 ```Dart
  /// Radius of the dot
   final double radius;
@@ -42,6 +43,7 @@ Add beautiful and trending tab indicators directly to your default Flutter TabBa
 ```
 
 ### MaterialIndicator
+
 ```Dart
   /// Height of the indicator. Defaults to 4
   final double height;
@@ -75,6 +77,7 @@ Add beautiful and trending tab indicators directly to your default Flutter TabBa
 ```
 
 #### RectangularIndicator
+
 ```Dart
 /// topRight radius of the indicator, default to 5.
   final double topRightRadius;
@@ -103,4 +106,32 @@ Add beautiful and trending tab indicators directly to your default Flutter TabBa
   /// StrokeWidth, used for [PaintingStyle.stroke], default set to 0
   final double strokeWidth;
 
+```
+
+## How to use
+
+```Dart
+// Directly use inside yoru [TabBar]
+TabBar(
+  indicatorColor: Colors.green,
+  tabs: [
+    Tab(
+      text: "Home",
+    ),
+    Tab(
+      text: "Work",
+    ),
+    Tab(
+      text: "Play",
+    ),
+  ],
+  labelColor: Colors.black,
+  // add it here
+  indicator: DotIndicator(
+    color: Colors.black,
+    distanceFromCenter: 16,
+    radius: 3,
+    paintingStyle: PaintingStyle.fill,
+  ),
+),
 ```
