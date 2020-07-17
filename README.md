@@ -16,7 +16,7 @@ Add beautiful and trending tab indicators directly to your default Flutter TabBa
 ## Demo
 
 <p align="center">
-  <img src="https://github.com/adar2378/tab_indicator_styler/raw/master/images/demo.gif" width="240" height="480"> 
+  <img src="https://github.com/adar2378/tab_indicator_styler/raw/master/images/demo.gif" height="480"> 
 </p>
 
 ## Styles
