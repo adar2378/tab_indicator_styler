@@ -20,16 +20,16 @@ class MaterialIndicator extends Decoration {
   /// bottomLeft radius of the indicator, default to 0
   final double bottomLeftRadius;
 
-  /// Color of the indicator
+  /// Color of the indicator, default set to [Colors.black]
   final Color color;
 
-  /// Horizontal padding of the indicator
+  /// Horizontal padding of the indicator, default set 0
   final double horizontalPadding;
 
   /// [PagingStyle] determines if the indicator should be fill or stroke, default to fill
   final PaintingStyle paintingStyle;
 
-  /// StrokeWidth, used for [PaintingStyle.stroke]
+  /// StrokeWidth, used for [PaintingStyle.stroke], default set to 2
   final double strokeWidth;
 
   MaterialIndicator({

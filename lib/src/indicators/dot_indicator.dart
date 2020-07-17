@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 
 class DotIndicator extends Decoration {
-  /// Radius of the dot
+  /// Radius of the dot, default set to 3
   final double radius;
 
-  /// Color of the dot
+  /// Color of the dot, default set to [Colors.blue]
   final Color color;
 
   /// Distance from the center, if you the value is positive, the dot will be positioned below the tab's center
-  /// if the value is negative, then dot will be positioned above the tab's center
+  /// if the value is negative, then dot will be positioned above the tab's center, default set to 8
   final double distanceFromCenter;
 
   /// [PagingStyle] determines if the indicator should be fill or stroke
   final PaintingStyle paintingStyle;
 
+  /// StrokeWidth, used for [PaintingStyle.stroke], default set to 2
   final double strokeWidth;
 
   DotIndicator({
