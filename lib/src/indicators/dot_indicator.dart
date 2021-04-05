@@ -25,7 +25,7 @@ class DotIndicator extends Decoration {
     this.strokeWidth = 2,
   });
   @override
-  _CustomPainter createBoxPainter([VoidCallback onChanged]) {
+  _CustomPainter createBoxPainter([VoidCallback? onChanged]) {
     return new _CustomPainter(
       this,
       onChanged,
@@ -48,33 +48,28 @@ class _CustomPainter extends BoxPainter {
 
   _CustomPainter(
     this.decoration,
-    VoidCallback onChanged,
+    VoidCallback? onChanged,
     this.radius,
     this.color,
     this.paintingStyle,
     this.distanceFromCenter,
     this.strokeWidth,
-  )   : assert(
-          decoration != null,
-          color != null,
-        ),
-        super(onChanged);
+  )   : super(onChanged);
 
   @override
   void paint(Canvas canvas, Offset offset, ImageConfiguration configuration) {
-    assert(configuration != null);
     assert(configuration.size != null);
     assert(strokeWidth >= 0 &&
-        strokeWidth < configuration.size.width / 2 &&
-        strokeWidth < configuration.size.height / 2);
+        strokeWidth < configuration.size!.width / 2 &&
+        strokeWidth < configuration.size!.height / 2);
 
     //offset is the position from where the decoration should be drawn.
     //configuration.size tells us about the height and width of the tab.
 
     final Paint paint = Paint();
-    double xAxisPos = offset.dx + configuration.size.width / 2;
+    double xAxisPos = offset.dx + configuration.size!.width / 2;
     double yAxisPos =
-        offset.dy + configuration.size.height / 2 + distanceFromCenter;
+        offset.dy + configuration.size!.height / 2 + distanceFromCenter;
     paint.color = color;
     paint.style = paintingStyle;
     paint.strokeWidth = strokeWidth;

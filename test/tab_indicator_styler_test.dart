@@ -5,7 +5,7 @@ import 'package:tab_indicator_styler/tab_indicator_styler.dart';
 
 void main() {
   final TestWidgetsFlutterBinding binding =
-      TestWidgetsFlutterBinding.ensureInitialized();
+      TestWidgetsFlutterBinding.ensureInitialized() as TestWidgetsFlutterBinding;
 
   testWidgets('Basic Indicator Test', (WidgetTester tester) async {
     await binding.setSurfaceSize(const Size(800, 400));
